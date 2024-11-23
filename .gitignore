@@ -35,3 +35,22 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+.cursorrules
+
+# Ruby/Jekyll specific #
+#######################
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+Gemfile.lock
+
+# Ruby environment #
+###################
+.ruby-version
+.ruby-gemset
+.rbenv-vars
+.rvmrc

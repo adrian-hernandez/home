@@ -1,0 +1,139 @@
+:root {
+  --color-dark: #141414;           /* Darkest color (outside areas) */
+  --color-surface: #1a1a1a;        /* Content background color */
+  --color-accent: #40E0D0;         /* Aqua accent color */
+  --color-text-primary: #ffffff;
+  --font-family-nav: 'Righteous', sans-serif;
+}
+
+body {
+  background-color: var(--color-dark);  /* Outside area matches header */
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.site-header {
+  background-color: var(--color-dark);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-right: 2rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-family: var(--font-family-nav) !important;
+  font-size: 3em;
+  font-weight: 500;
+  padding: 0 0.5rem;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+}
+
+/* Home page specific styles */
+.home-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--color-surface);  /* Added background color */
+  border-radius: 8px;  /* Optional: adds rounded corners */
+  margin-top: 2rem;    /* Optional: adds some space below header */
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--color-dark);  /* Updated to match header */
+  margin-bottom: 2rem;
+  border-radius: 8px;  /* Optional: matches content area */
+}
+
+.hero h1 {
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.lead {
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+}
+
+.featured-content {
+  padding: 2rem 0;
+}
+
+/* Blog listing styles */
+.post-preview {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-background-header);
+}
+
+.post-preview h2 {
+  margin-bottom: 0.5rem;
+}
+
+.post-preview h2 a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.post-preview h2 a:hover {
+  color: var(--color-text-primary);
+}
+
+.post-preview time {
+  color: #888;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Add page content styles */
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--color-surface);  /* Added background color */
+  border-radius: 8px;  /* Optional: adds rounded corners */
+  margin-top: 2rem;    /* Optional: adds some space below header */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-accent);
+} 
