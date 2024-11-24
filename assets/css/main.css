@@ -54,7 +54,7 @@ main {
 
 .site-nav {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   height: 100%;
 }
 
@@ -124,12 +124,12 @@ main {
 }
 
 .post-preview h2 a {
-  color: var(--color-accent);
+color: var(--color-text-primary);
   text-decoration: none;
 }
 
 .post-preview h2 a:hover {
-  color: var(--color-text-primary);
+  color: var(--color-accent);
 }
 
 .post-preview time {
@@ -157,6 +157,39 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+/* Ensure post content takes full width and wraps properly */
+.page-content > * {
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Keep the h1 centered if desired */
+.page-content > h1:first-child {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Style the post date in individual posts */
+.page-content > time {
+  color: #888;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 2rem;
+  text-align: center;  /* Center the date in posts */
+  width: 100%;        /* Ensure full width for centering */
+}
+
+/* Keep post preview dates left-aligned */
+.post-preview time {
+  color: #888;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: left;   /* Keep preview dates left-aligned */
 }
 
 h1, h2, h3, h4, h5, h6 {
