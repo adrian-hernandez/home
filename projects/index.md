@@ -13,7 +13,7 @@ title: Projects
     <div class="project-description">
       <h2>Taskify</h2>
       <p>A simple task management application built with Spring Boot (backend), Angular (frontend) and an in-memory database using MapDB.</p>
-      <a href="https://github.com/yourusername/project1" class="source-link" target="_blank" rel="noopener noreferrer">Go to source code</a>
+      <a href="https://github.com/adrian-hernandez/taskify" class="source-link" target="_blank" rel="noopener noreferrer">Go to source code</a>
     </div>
   </div>
 
@@ -25,7 +25,7 @@ title: Projects
     <div class="project-description">
       <h2>Dodge</h2>
       <p>A fast-paced browser game where you dodge enemies and collect gems using Three.js.</p>
-      <a href="https://github.com/yourusername/project2" class="source-link" target="_blank" rel="noopener noreferrer">Go to source code</a>
+      <a href="https://github.com/adrian-hernandez/dodge" class="source-link" target="_blank" rel="noopener noreferrer">Go to source code</a>
     </div>
   </div>
 
@@ -37,7 +37,7 @@ title: Projects
     <div class="project-description">
       <h2>Elude</h2>
       <p>2D game in which you elude AI who chase you intelligently by calculating the shortest path to you in realtime.</p>
-      <a href="https://github.com/yourusername/project3" class="source-link" target="_blank" rel="noopener noreferrer">Go to source code</a>
+      <a href="https://github.com/adrian-hernandez/elude" class="source-link" target="_blank" rel="noopener noreferrer">Go to source code</a>
     </div>
   </div>
 
@@ -49,7 +49,7 @@ title: Projects
     <div class="project-description">
       <h2>Hangman</h2>
       <p>Classic hangman game.</p>
-      <a href="https://github.com/yourusername/project4" class="source-link" target="_blank" rel="noopener noreferrer">Go to source code</a>
+      <a href="https://github.com/adrian-hernandez/hangman" class="source-link" target="_blank" rel="noopener noreferrer">Go to source code</a>
     </div>
   </div>
 </div> 
