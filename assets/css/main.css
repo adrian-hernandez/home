@@ -195,20 +195,19 @@ color: var(--color-text-primary);
   text-align: left;   /* Keep preview dates left-aligned */
 }
 
+/* Consolidated heading styles */
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-accent);
 }
 
-/* Center h1 in main content */
-.page-content h1,
-.home-content h1 {
+h1 {
   text-align: center;
   width: 100%;
-  margin-bottom: 2rem;  /* Add some space below the title */
+  margin-bottom: 2rem;
 }
 
-/* Keep post preview h1s left-aligned if needed */
-.post-preview h1 {
+.post-preview h1,
+.post-preview h2 {
   text-align: left;
 }
 
