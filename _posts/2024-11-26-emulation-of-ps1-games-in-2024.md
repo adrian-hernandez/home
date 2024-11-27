@@ -7,6 +7,8 @@ excerpt_separator: <!--more-->
 
 While studying algorithms, I decided to listen to music from some of my favorite PS1 games. I was surprised to find that some of them still sounded great. I decided to see if I could get them running in 2024.
 
+<!--more-->
+
 ## Background
 A few years ago I was able to setup ePSXe, a PS1 emulator, on my laptop and desktop. While it was a great emulator, it required a lot of manual setup. I wanted to see if I could get some PS1 games running in 2024 without all the hassle.
 
