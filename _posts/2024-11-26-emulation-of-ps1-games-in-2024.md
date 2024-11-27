@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Emulation of PS1 Games in 2024"
-date: 2024-11-23
+date: 2024-11-26
 excerpt_separator: <!--more-->
 ---
 
