@@ -508,4 +508,16 @@ h1 {
   font-size: 0.9rem;
   color: #888;
   margin-bottom: 0.5rem;
-} 
+}
+
+.featured-projects h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.latest-posts h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}

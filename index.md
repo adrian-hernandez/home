@@ -11,7 +11,7 @@ title: Home
 </div>
 
 <div class="intro-section">
-  <p>Hi! I'm Adrian, a software engineer passionate about creating elegant solutions and engaging games. With expertise in full-stack development and game programming, I love bringing ideas to life through code.</p>
+  <p>Hey there! I'm Adrian. I love building things with code. Whether it's crafting web applications or creating games, I enjoy the whole process of bringing ideas to life. When I'm not coding, you can find me hiking, playing video games, or watching movies.</p>
   
   <div class="cta-buttons">
     <a href="{{ '/blog' | relative_url }}" class="cta-link">Read My Blog</a>
@@ -27,8 +27,8 @@ title: Home
       <p>Task management application with Spring Boot & Angular</p>
     </a>
     <a href="{{ '/projects' | relative_url }}" class="project-card">
-      <h3>Elude</h3>
-      <p>2D game with intelligent AI pathfinding</p>
+      <h3>Dodge</h3>
+      <p>A fast-paced browser game where you dodge enemies and collect gems using Three.js</p>
     </a>
   </div>
 </div>
