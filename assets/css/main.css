@@ -388,14 +388,20 @@ h1 {
 /* Home page hero section */
 .hero-section {
   text-align: center;
-  padding: 4rem 2rem;
-  margin-bottom: 3rem;
+  padding: 0.5rem 0.5rem;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-container {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 2rem;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 1rem;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--color-accent);
@@ -407,24 +413,24 @@ h1 {
   object-fit: cover;
 }
 
-.tagline {
+/* .tagline {
   color: var(--color-accent);
   font-size: 1.5rem;
   margin-top: 0.5rem;
-}
+} */
 
 /* Intro section */
 .intro-section {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 4rem;
-  padding: 0 2rem;
+  margin: -2rem auto 4rem;  /* Added negative margin to pull it up */
+  padding: 0 1rem;
 }
 
 .intro-section p {
   font-size: 1.2rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .cta-buttons {
