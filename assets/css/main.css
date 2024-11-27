@@ -216,6 +216,7 @@ color: var(--color-text-primary);
   max-width: 1200px;
   background-color: var(--color-surface);
   padding: 2rem;
+  padding-bottom: 8rem;  /* Added padding for footer clearance */
   min-height: calc(100vh - 160px);
   margin: 0 auto;
   display: flex;
