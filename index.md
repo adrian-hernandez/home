@@ -7,7 +7,7 @@ title: Home
     <img src="{{ '/assets/images/profile.png' | relative_url }}" alt="J. Adrian Hernandez" class="profile-image">
   </div>
   <h1>J. Adrian Hernandez</h1>
-  <p class="tagline">Software Engineer & Game Developer</p>
+  <p class="tagline">Developer & Blogger</p>
 </div>
 
 <div class="intro-section">
