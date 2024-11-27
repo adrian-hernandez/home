@@ -1,4 +1,6 @@
 title: J Adrian Hernandez
+baseurl: "/home"
+url: "https://adrian-hernandez.github.io"
 description: Developer & Blogger
 theme: minima
 permalink: pretty
