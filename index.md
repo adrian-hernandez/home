@@ -36,7 +36,7 @@ title: Home
   <h2>Latest Posts</h2>
   <div class="post-preview-container">
     {% for post in site.posts limit:2 %}
-    <a href="{{ post.url }}" class="post-card">
+    <a href="{{ post.url | relative_url }}" class="post-card">
       <h3>{{ post.title }}</h3>
       <time>{{ post.date | date_to_string }}</time>
       <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
