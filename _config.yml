@@ -3,7 +3,7 @@ baseurl: "/home"
 url: "https://adrian-hernandez.github.io"
 description: Developer & Blogger
 theme: minima
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title/
 
 # Build settings
 markdown: kramdown
