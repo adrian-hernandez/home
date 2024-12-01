@@ -528,3 +528,47 @@ h1 {
   width: 100%;
   margin-bottom: 2rem;
 }
+
+.logo-link {
+  padding: 15px 0;  /* Add padding top and bottom */
+  border-bottom: none;
+  height: 50px;     /* Reduced height to account for padding */
+  display: flex;    /* Added to help with vertical alignment */
+  align-items: center;
+}
+
+.logo-link:hover {
+  border-bottom: none;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+  transition: opacity 0.3s ease;
+}
+
+.logo-default {
+  display: block;
+}
+
+.logo-hover {
+  display: none;
+}
+
+.logo-link:hover .logo-default {
+  display: none;
+}
+
+.logo-link:hover .logo-hover {
+  display: block;
+}
+
+main.page-content img {
+  max-width: 800px !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 2rem auto !important;
+  border-radius: 8px !important;
+  background-color: var(--color-dark) !important;
+}
