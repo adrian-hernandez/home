@@ -1,0 +1,20 @@
+title: J Adrian Hernandez
+baseurl: "/home"
+url: "https://adrian-hernandez.github.io"
+description: Developer & Blogger
+theme: minima
+permalink: /blog/:year/:month/:day/:title/
+
+# Build settings
+markdown: kramdown
+
+# Comment out or remove blog-related collections/defaults if they exist
+# collections:
+#   posts:
+#     output: true
+
+# defaults:
+#   - scope:
+#       path: "_posts"
+#     values:
+#       layout: post

@@ -1,0 +1,574 @@
+:root {
+  --color-dark: #141414;           /* Darkest color (outside areas) */
+  --color-surface: #1a1a1a;        /* Content background color */
+  --color-accent: #40E0D0;         /* Aqua accent color */
+  --color-text-primary: #ffffff;
+  --font-family-primary: 'Righteous', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Reset all link styles */
+a {
+  text-decoration: none !important;
+  -webkit-text-decoration: none !important;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* Global font settings */
+body {
+  background-color: var(--color-dark);
+  color: var(--color-text-primary);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-primary);
+  overflow-x: hidden;    /* Prevent horizontal scroll */
+}
+
+/* Main element styles */
+main {
+  flex: 1 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  padding-bottom: calc(2rem + 120px);  /* Increased padding to prevent footer overlap */
+  box-sizing: border-box;
+  margin-bottom: 2rem;  /* Added margin to ensure space at bottom */
+}
+
+.site-header {
+  background-color: var(--color-dark);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-right: 2rem;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-size: 3em;
+  font-weight: 500;
+  padding: 0 0.5rem;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  text-align: center;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+}
+
+.nav-right {
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+}
+
+.nav-left {
+  height: 100%;
+}
+
+/* Home page specific styles */
+.home-content {
+  width: 100%;
+  max-width: 1200px;
+  background-color: var(--color-surface);
+  padding: 2rem;
+  min-height: calc(100vh - 160px);
+  margin: 0 auto;
+  margin-bottom: 8rem;  /* Added margin to prevent footer overlap */
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--color-dark);
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.lead {
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+}
+
+.featured-content {
+  padding: 2rem 0;
+}
+
+/* About section styles */
+.about-section {
+  text-align: left;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.about-section h2 {
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+}
+
+.about-section p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-section .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.about-section .skill-tag {
+  background-color: var(--color-dark);
+  color: var(--color-accent);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Blog listing styles */
+.post-preview {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-background-header);
+  text-align: left;
+  width: 100%;
+}
+
+.post-preview h2 {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.post-preview h2 a {
+color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.post-preview h2 a:hover {
+  color: var(--color-accent);
+}
+
+.post-preview time {
+  color: #888;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* If you have a posts container, ensure it's also left-aligned */
+.posts-container {
+  width: 100%;
+  text-align: left;
+}
+
+/* Add page content styles */
+.page-content {
+  width: 100%;
+  max-width: 1200px;
+  background-color: var(--color-surface);
+  padding: 2rem;
+  padding-bottom: 8rem;  /* Added padding for footer clearance */
+  min-height: calc(100vh - 160px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Ensure post content takes full width and wraps properly */
+.page-content > * {
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Keep the h1 centered if desired */
+.page-content > h1:first-child {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Style the post date in individual posts */
+.page-content > time {
+  color: #888;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 2rem;
+  text-align: center;  /* Center the date in posts */
+  width: 100%;        /* Ensure full width for centering */
+}
+
+/* Keep post preview dates left-aligned */
+.post-preview time {
+  color: #888;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: left;   /* Keep preview dates left-aligned */
+}
+
+/* Consolidated heading styles */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-accent);
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.post-preview h1,
+.post-preview h2 {
+  text-align: left;
+}
+
+/* Footer styles */
+.site-footer {
+  flex-shrink: 0;
+  background-color: var(--color-surface);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 1.5rem 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.footer-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.social-link {
+  color: var(--color-text-primary);
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.social-link:hover {
+  color: var(--color-accent);
+}
+
+.social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/* Project styles */
+.project-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 8rem;  /* Added margin to ensure space after last project */
+}
+
+.project-item {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  align-items: flex-start;  /* Align items to top */
+}
+
+.project-image {
+  width: 200px;         /* Fixed width for square */
+  height: 200px;        /* Same as width for square */
+  overflow: hidden;     /* Contain the image */
+  flex-shrink: 0;       /* Prevent shrinking */
+  border-radius: 8px;   /* Optional: rounded corners */
+  background: var(--color-dark);  /* Background while image loads */
+  display: flex;        /* Added to center the image */
+  align-items: center;  /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.project-image img {
+  max-width: 100%;     /* Changed from width: 100% */
+  max-height: 100%;    /* Changed from height: 100% */
+  object-fit: contain; /* Changed from cover to contain */
+  display: block;      /* Remove any extra space */
+}
+
+.project-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-description h2 {
+  margin-top: 0;
+  color: var(--color-accent);
+}
+
+.source-link {
+  align-self: flex-start;
+  color: var(--color-accent);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-accent);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.source-link:hover {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+/* Home page hero section */
+.hero-section {
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--color-accent);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .tagline {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+} */
+
+/* Intro section */
+.intro-section {
+  text-align: center;
+  max-width: 800px;
+  margin: -2rem auto 4rem;  /* Added negative margin to pull it up */
+  padding: 0 1rem;
+}
+
+.intro-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cta-link {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid var(--color-accent);
+  border-radius: 4px;
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-link:hover {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
+}
+
+/* Featured projects section */
+.featured-projects {
+  margin-bottom: 4rem;
+}
+
+.project-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+/* Latest posts section */
+.post-preview-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.post-card {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.post-card h3 {
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.post-card time {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.featured-projects h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.latest-posts h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.logo-link {
+  padding: 15px 0;  /* Add padding top and bottom */
+  border-bottom: none;
+  height: 50px;     /* Reduced height to account for padding */
+  display: flex;    /* Added to help with vertical alignment */
+  align-items: center;
+}
+
+.logo-link:hover {
+  border-bottom: none;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+  transition: opacity 0.3s ease;
+}
+
+.logo-default {
+  display: block;
+}
+
+.logo-hover {
+  display: none;
+}
+
+.logo-link:hover .logo-default {
+  display: none;
+}
+
+.logo-link:hover .logo-hover {
+  display: block;
+}
+
+main.page-content img {
+  max-width: 800px !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 2rem auto !important;
+  border-radius: 8px !important;
+  background-color: var(--color-dark) !important;
+}
