@@ -13,12 +13,12 @@ title: Home
   <p>Hey there, I'm Adrian. I enjoy building things with code. Whether it's crafting web applications or creating games, I enjoy the whole process of bringing ideas to life. In my free time, you can find me reading, playing video/tabletop games, or watching movies.</p>
   
   <div class="cta-buttons">
-    <a href="{{ '/blog' | relative_url }}" class="cta-link">Read My Blog</a>
+    <!-- <a href="{{ '/blog' | relative_url }}" class="cta-link">Read My Blog</a> -->
     <a href="{{ '/projects' | relative_url }}" class="cta-link">View My Projects</a>
   </div>
 </div>
 
-<div class="featured-projects">
+<!-- <div class="featured-projects">
   <h2>Some of my Projects</h2>
   <div class="project-preview">
     <a href="{{ '/projects' | relative_url }}" class="project-card">
@@ -30,9 +30,9 @@ title: Home
       <p>A fast-paced browser game where you dodge enemies and collect gems using Three.js</p>
     </a>
   </div>
-</div>
+</div> -->
 
-<div class="latest-posts">
+<!-- <div class="latest-posts">
   <h2>Latest Posts</h2>
   <div class="post-preview-container">
     {% for post in site.posts limit:2 %}
@@ -43,4 +43,4 @@ title: Home
     </a>
     {% endfor %}
   </div>
-</div>
+</div> -->
